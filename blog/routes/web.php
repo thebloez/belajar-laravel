@@ -33,7 +33,12 @@ Route::get('pegawai', 'Pegawai@index');
 
 Route::get('formulir', 'FormulirController@formulir');
 
-Route::get('formulir/proses', 'FormulirController@proses');
+Route::post('formulir/proses', 'FormulirController@proses');
+
+// route blog
+Route::get('/blog', 'BlogController@home');
+Route::get('/blog/tentang', 'BlogController@tentang');
+Route::get('/blog/kontak', 'BlogController@kontak');
 
 
 
